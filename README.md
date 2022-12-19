@@ -1,6 +1,6 @@
 # streamlit_qrcode_scanner
 
-A Qrcode Scanner with back camera as default
+A Qrcode Scanner with back camera as default  
 Use https://github.com/mebjas/html5-qrcode
 
 
