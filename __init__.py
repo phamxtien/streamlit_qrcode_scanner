@@ -42,10 +42,10 @@ def qrcode_scanner(
 def main():
     st.write("## Example")
 
-    image = qrcode_scanner()
+    qrcode = qrcode_scanner()
 
-    if image is not None:
-        st.image(image)
+    if qrcode is not None:
+        st.write(qrcode)
 
 
 if __name__ == "__main__":
