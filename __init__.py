@@ -14,19 +14,11 @@ _component_func = components.declare_component(
 )
 
 
-def qrcode_scanner(
-    height: int = 250,
-    width: int = 250,
-    key: Optional[str] = None,    
-) -> Optional[BytesIO]:
+def qrcode_scanner(key: Optional[str] = None) -> Optional[BytesIO]:
     """
     Add a descriptive docstring
     """
-    data: Optional[str] = _component_func(
-        height=height,
-        width=width,
-        key=key,
-    )
+    data: Optional[str] = _component_func(key=key)
 
     if data is None:
         return None
