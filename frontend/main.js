@@ -19,7 +19,7 @@ function sendValue(value) {
     // Only run the render code the first time the component is loaded.
     if (!window.rendered) {
       // You most likely want to get the data passed in like this
-      var { height, width } = event.detail.args;
+      // var { height, width } = event.detail.args;
       
       let video = document.getElementById('qr-reader');
       let canvas = document.getElementById('qr-reader-results');
@@ -79,8 +79,9 @@ function sendValue(value) {
               sendValue(lastResult);                
             }
         }
+        height = 1/4 * height;
         const html5QrCode = new Html5Qrcode("qr-reader");        
-        const config = { fps: 10, qrbox: { width: 250, height: 250 } };  
+        const config = { fps: 10, qrbox: { width: 2*(height-10), height: height-10 } };  
         html5QrCode.start({ facingMode: "environment" }, config, onScanSuccess);
       });             
       window.rendered = true
