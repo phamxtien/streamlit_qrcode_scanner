@@ -3,6 +3,8 @@
 A Qrcode Scanner with back camera as default  
 Use https://github.com/mebjas/html5-qrcode
 
+Notes: Only works with https
+
 ## Installation:
 ````
 pip install streamlit_qrcode_scanner
